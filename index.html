@@ -9,8 +9,14 @@
 <body>
     <div class="container">
         <h1>Lista de Convidados</h1>
-        <ul id="guestList"></ul>
-        <div id="statistics"></div>
+        <div class="list-container">
+            <ul id="guestList"></ul>
+        </div>
+        <div id="statistics" class="statistics">
+            <h2>Estatísticas</h2>
+            <p><strong>Total de nomes que começam com "A":</strong> <span id="countA">0</span></p>
+            <p><strong>Lista de nomes com mais de 5 letras:</strong> <span id="longNames">Nenhum</span></p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
