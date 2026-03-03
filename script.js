@@ -31,11 +31,8 @@ function processarConvidados() {
     }
 
     // Exibe as estatísticas
-    const statsElement = document.getElementById('statistics');
-    statsElement.innerHTML = `
-        <p><strong>Total de nomes que começam com "A":</strong> ${nomesComA}</p>
-        <p><strong>Lista de nomes com mais de 5 letras:</strong> ${nomesLongos.join(', ')}</p>
-    `;
+    document.getElementById('countA').textContent = nomesComA;
+    document.getElementById('longNames').textContent = nomesLongos.length > 0 ? nomesLongos.join(', ') : 'Nenhum';
 }
 
 // Chama a função quando a página for carregada
